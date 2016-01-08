@@ -1,505 +1,458 @@
-﻿<!DOCTYPE html>
+<?php
+    require_once './classes/sendmessage.php';
+    require_once './phpmailer/class.phpmailer.php';
+
+?>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAP TI é uma empresa individual apta a prestar serviços de TI, focalizado em desenvolvimento de projetos de sistemas e sites. Trabalhando com Cloud Computing, é passível de atendimento e suporte remoto. Nos casos de suporte aos computadores e notebooks, é possível trabalharmos remotamente, tal serviço tem sido um sucesso aos clientes.">
+    <meta name="author" content="Michel Pereira">
+    <meta name="keywords" content="map mapti michel pereira desenvolvimento sistema software site projetos web internet rede">
+    <meta name="robots" content="map, mapti, michel pereira, desenvolvimento, sistema, software, site, projetos, web, internet, rede">
+    <meta name="googlebot" content="map, mapti, michel pereira, desenvolvimento, sistema, software, site, projetos, web, internet, rede">
+    <title>MAP TI - Desenvolvimento de Projetos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
-    <head>
+  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/iconMapti.ico">
+    <link rel="icon" type="image/png" href="images/iconMapTI24x24.png">
+    
+</head><!--/head-->
 
+<body>
 
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-        <meta name="description" content="MAP TI é uma empresa individual apta a prestar serviços de TI, focalizado em desenvolvimento de projetos de sistemas e sites. Trabalhando com Cloud Computing, é passível de atendimento e suporte remoto. Nos casos de suporte aos computadores e notebooks, é possível trabalharmos remotamente, tal serviço tem sido um sucesso aos clientes.">
-        <meta name="author" content="Michel Pereira">
-        <meta name="keywords" content="map mapti michel pereira desenvolvimento sistema software site projetos web internet rede">
-        <meta name="robots" content="map, mapti, michel pereira, desenvolvimento, sistema, software, site, projetos, web, internet, rede">
-        <meta name="googlebot" content="map, mapti, michel pereira, desenvolvimento, sistema, software, site, projetos, web, internet, rede">
-        <!--<link rel="icon" type="image/png" href="img/iconMapTI24x24.png">-->
-        <link rel="shortcut icon" href="img/iconMapti.ico">
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
 
-        <title>MAP TI - Desenvolvimento de Softwares</title>
-
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-        <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="css/animate.css" rel="stylesheet" />
-        <!-- Squad theme CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="color/default.css" rel="stylesheet">
-
-    </head>
-
-    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-        <!-- Preloader -->
-        <div id="preloader">
-            <div id="load"></div>
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/smanager.jpg)">
+          <div class="caption">
+              <p class="animated fadeInLeftBig">
+                  <img src="images/logoMapTI.png" title="MAP TI" width="330" height="200">
+              </p>
+            <!--<h1 class="animated fadeInLeftBig">Welcome to <span>Oxygen</span></h1>-->
+              <p class="animated fadeInRightBig">
+                <span style="">Desenvolvimento de Projetos de Softwares</span>
+              </p>
+            <!--<p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>-->
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">
+                Saiba mais
+            </a>
+          </div>
         </div>
+        <div class="item" style="background-image: url(images/slider/cloud.jpg)">
+          <div class="caption">
+              <h1 class="animated fadeInLeftBig" style="font-size: 30px;">
+                  Desenvolvimento de <span>Projetos</span>
+              </h1>
+            <p class="animated fadeInRightBig">
+                Projetos de Sistemas, Sites e Cloud Computing. Todos de forma responsiva para dispositivos mobile.
+            </p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">
+                Saiba mais
+            </a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/notebook.jpg)">
+          <div class="caption">
+              <h1 class="animated fadeInLeftBig" style="font-size: 30px;">
+                  Suporte <span>Remoto</span>
+              </h1>
+            <p class="animated fadeInRightBig">
+                Atendimento remoto a computadores e notebooks, Redes local e wi-fi
+            </p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">
+                Saiba mais
+            </a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/fundoRestrito.jpg)">
+          <div class="caption">
+              <h1 class="animated fadeInLeftBig" style="font-size: 30px;">
+                  Acesso <span>Restrito</span>
+              </h1>
+            <p class="animated fadeInRightBig">
+                Acesso exclusivo para clientes e futuros clientes.
+            </p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="restrito/acesso.php">
+                Acesse aqui
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
 
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.php">
-                        <img src="img/logoMapTI.png" title="MAP TI" width="250" height="150" />
-                    </a>
-                </div>
+      <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#intro">Home</a></li>
-                        <li><a href="#about">Quem Somos</a></li>
-                        <li><a href="#service">Serviços</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                        <!--        <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#">Example menu</a></li>
-                                    <li><a href="#">Example menu</a></li>
-                                    <li><a href="#">Example menu</a></li>
-                                  </ul>
-                                </li>-->
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    </div><!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">
+            <!--<h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>-->
+              <h1>
+                  <img class="img-responsive" src="images/logoMapTi200x100.png" alt="logo" width="148" height="100">
+              </h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#services">Serviços</a></li> 
+            <li class="scroll"><a href="#about-us">Sobre MAP TI</a></li>                     
+            <li class="scroll"><a href="#team">Equipe</a></li>
+<!--            <li class="scroll"><a href="#blog">Blog</a></li>-->
+            <li class="scroll"><a href="#contact">Contato</a></li>       
+            <li class="scroll"><a href="restrito/acesso.php">Acesso</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+  <section id="services">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Serviços</h2>
+            <p>
+                Todos os serviços são projetados cautelosamente com transparência, segurança e eficiência. A qualidade e o preço correspondem para todos os serviços, pois queremos a mesma coisa: <b>satisfazer os nossos clientes</b>.
+            </p>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <i class="fa fa-briefcase"></i>
             </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- Section: intro -->
-        <section id="intro" class="intro">
-
-            <div class="slogan">
-                <h2>BEM-VINDOS AO SITE DO <span class="text_color">MAP TI</span> </h2>
-                <!--<h4>CONHEÇA OS NOSSOS SERVIÇOS CLICANDO NO MENU ACIMA.</h4>-->
+            <div class="service-info">
+              <h3>Web Marketing</h3>
+              <p>
+                  Divulgar os seus serviços on-line tornou-se uma ferramenta bastante útil, devido a alta procura dos produtos e/ou serviços pelos buscadores. Divulgar promoções, produtos e/ou serviços novos, manter o feedback interage com o cliente, se sentindo mais à vontade e confiante.
+              </p>
             </div>
-            <div class="page-scroll">
-                <a href="#service" class="btn btn-circle">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon">
+              <i class="fa fa-tablet"></i>
             </div>
-        </section>
-        <!-- /Section: intro -->
-
-        <!-- Section: about -->
-        <section id="about" class="home-section text-center">
-            <div class="heading-about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                <div class="section-heading">
-                                    <h2>QUEM SOU EU</h2>
-                                    <i class="fa fa-2x fa-angle-down"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-info">
+              <h3>Redes Sociais</h3>
+              <p>Inúmeras pessoas acessam a rede social, que hoje é uma ferramenta muito útil para a divulgação dos seus produtos e/ou serviços. A cada curtida, outras pessoas são informados em questão de segundos que, por sua vez, conhece cada vez mais os seus produtos e/ou serviços.</p>
             </div>
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-5">
-                        <hr class="marginbot-50">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="wow bounceInUp" data-wow-delay="0.2s">
-                            <div class="team boxed-grey">
-                                Sou desenvolvedor desde 2001 e trabalho, inclusive, com projetos de sistemas.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <!-- /Section: about -->
-
-
-        <!-- Section: services -->
-        <section id="service" class="home-section text-center bg-gray">
-
-            <div class="heading-about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                <div class="section-heading">
-                                    <h2>SERVIÇOS</h2>
-                                    <i class="fa fa-2x fa-angle-down"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-cloud"></i>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-5">
-                        <hr class="marginbot-50">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-6">
-                        <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="service-box">
-                                <div class="service-icon">
-                                    <img src="img/desenvolvimento-de-softwares.jpg" width="100" height="100" alt="" />
-                                </div>
-                                <div class="service-desc">
-                                    <h5>SOFTWARES</h5>
-                                    <p style="text-align: justify">
-                                        •	Elaboração e Manutenção de Sistemas e Projetos de Sistemas;<br/>
-                                        <br/><br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service-box">
-                                <div class="service-icon">
-                                    <img src="img/fundo-_site.gif" alt="" width="100" height="100" />
-                                </div>
-                                <div class="service-desc">
-                                    <h5>SITES</h5>
-                                    <p style="text-align: justify">
-                                        <!--<b>Paisagismo</b>:<br/>-->
-
-                                        •	Elaboração e Manutenção de Sites;<br/>
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>		
+            <div class="service-info">
+              <h3>Cloud Computing</h3>
+              <p>Um recurso bem útil para armazenamento de seus arquivos e sistemas. Através do recurso de segurança <b>SaaS</b>, fica bem mais fácil e confiante manter a estrutura de um sistema e banco de dados, além de manter qualquer tipo de arquivos e programas executáveis.</p>
             </div>
-        </section>
-        <!-- /Section: services -->
-
-        <section id="portfolio" class="home-section text-center">
-            <div class="heading-about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                <div class="section-heading">
-                                    <h2>PORTFÓLIO</h2>
-                                    <i class="fa fa-2x fa-angle-down"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-coffee"></i>
             </div>
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-5">
-                        <hr class="marginbot-50">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="wow bounceInUp" data-wow-delay="0.2s">
-                            <div class="team boxed-grey">
-                                O meu primeiro contato com a informática foi aos meus 6 anos, quando obtive o velho TK85.
-
-                                </b>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <!-- /Section: about -->
-
-
-
-        <!-- Section: contact -->
-        <section id="contact" class="home-section text-center">
-            <div class="heading-contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="wow bounceInDown" data-wow-delay="0.4s">
-                                <div class="section-heading">
-                                    <h2>CONTATO</h2>
-                                    <i class="fa fa-2x fa-angle-down"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-info">
+              <h3>Sites</h3>
+              <p>
+                  Página para web, com design responsivos para melhor visualização nos dispositivos tablet e celulares, garantindo a transparência e a qualidade. Um site representa uma forma de os clientes conhecerem melhor os produtos e/ou serviços, assim como a possibilidade de efetuar uma compra através do site.
+              </p>
             </div>
-            <div class="container">
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-code"></i>
+            </div>
+            <div class="service-info">
+              <h3>Sistemas Web e Desktop</h3>
+              <p>
+                  Um sistema pode ser web (externo ou internet) ou desktop (interno, necessitando de instalação), porém, monitorados frequentemente e elaborado cada processo de evolução do software, de forma mais fácil a atender os clientes. Atualmente, não trabalhamos no intuito de apenas cadastrar, alterar, consultar ou excluir, e sim, de forma a oferecer solução ao cliente.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-support"></i>
+            </div>
+            <div class="service-info">
+              <h3>Suporte Remoto</h3>
+              <p>
+                  Consiste na manutenção de computadores e notebooks, incluindo configurações. Com o auxílio da internet, há possibilidade de fazer manutenção remota em qualquer lugar que estiver. Muitas vezes, tem que ser presencial e somente na ausência da internet, posso realizar. Esse recurso é um sucesso para todos os meus clientes. Lembrando que esse recurso só é possível na manutenção preventiva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#services-->
+  <section id="about-us" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Sobre MAP TI</h2>
+            <p>
+                MAP TI é uma empresa individual criada por mim, <b>Michel Pereira</b>, para prestar serviços de Tecnologia da Informação, ou informática para o entendimento popular. Dispondo dos meus conhecimentos com foco em desenvolvimento de softwares, sites e banco de dados cuja experiência me mantém em constante atualização desde o ano de 2000. Antes de criar o MAP TI, trabalhava como freelance.
+            </p>
+            <p>
+                Na verdade, iniciei os conhecimentos de desenvolvimento em 1985, na linguagem BASIC, no velho TK85, após a leitura intensa do uso da linguagem. Embora tenha trabalhado no ramo de contabilidade até 2000, executava serviços paralelos em TI. A minha primeira linguagem de programação usada profissionalmente é o Delphi (vulgo Pascal). Com o incentivo de várias pessoas, inclusive colegas de trabalho, decidi aprimorar os meus conhecimentos em TI, no qual até hoje tenho satisfação bem grande dos meus antigos e novos clientes.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <p class="lead">Experiência de Usuário</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+              <p class="lead">Sites</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="90">90%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <p class="lead">Programação/ Desenvolvimento de Projetos</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Banco de dados</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Suporte Remoto</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#Sobre MAP TI-->
 
-                <div class="row">
-                    <div class="col-lg-2 col-lg-offset-5">
-                        <hr class="marginbot-50">
-                    </div>
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>A Equipe</h2>
+          <p>
+              O MAP TI, como é uma empresa individual, os serviços são desenvolvidos por mim no meu home office.
+          </p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+            <div class="col-sm-3">
+                &nbsp;
+            </div>
+          <div class="col-sm-6">
+            <div class="team-member" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <!--<div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">-->
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/michelPereira.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Michel Pereira</h3>
+                <h4>CEO &amp; Fundador</h4>
+                <p>
+                    Analista de Sistemas, Desenvolvedor e Analista BD
+                </p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li>
+                      <a class="facebook" href="https://www.facebook.com/pereira.michel1" target="_blank">
+                          <i class="fa fa-facebook"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="twitter" href="https://www.twitter.com/pereiramichel" target="_blank">
+                          <i class="fa fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="linkedin" href="https://br.linkedin.com/in/pereiramichel" target="_blank">
+                          <i class="fa fa-linkedin"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dribbble" href="https://dribbble.com/pereiramichel" target="_blank">
+                          <i class="fa fa-dribbble"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="envelope" href="mailto:pereira.michel@gmail.com" title="pereira.michel@gmail.com" target="_blank">
+                          <i class="fa fa-envelope" title="pereira.michel@gmail.com"></i>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-3">
+                &nbsp;
+            </div>            
+        </div>
+      </div>            
+    </div>
+  </section><!--/#team-->
+
+  <section id="contact">
+<!--    <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contato</h2>
+            <p>
+                Entre em contato para qualquer informação, solicitação, orçamento, elogios, sugestões etc. Seu contato e sempre bem-vindo. Favor preencher todos os campos.
+            </p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+                <div style="display: none;" id="mensagem">
+                    <p><i class='fa fa-spinner fa-spin'></i> Enviando...</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="boxed-grey">
-                            <form id="contact-form" action="index.php#contact" method="post" name="form_contato">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="name">
-                                                Nome</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Preencha o nome" required="required" name="nome" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">
-                                                E-mail</label>
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                </span>
-                                                <input type="email" name="email" class="form-control" id="email" placeholder="Preencha o e-mail" required="required" /></div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="subject">
-                                                Motivo</label>
-                                            <select id="subject" name="motivo" class="form-control" required="required">
-                                                <!--<option value="na" selected="">Selecione</option>-->
-                                                <option value="Sugestões/ Elogios">Sugestões/ Elogio</option>
-                                                <option value="Orçamento">Orçamento</option>
-                                                <option value="Solicitação">Solicitação</option>
-                                                <option value="Reclamação">Reclamação</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="mensagem">
-                                                Messagem</label>
-                                            <textarea name="mensagem" id="messagem" class="form-control" rows="9" cols="25" required="required"
-                                                      placeholder="Messagem"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-
-                                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                                            Enviar
-                                        </button>
-                <!--<input type="submit" class="btn btn-skin pull-right" value="Enviar">-->
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <div style="display: none;" id="sucesso">
+                    <p class="text-success" id="mensagemSucesso"><b>Obrigado pelo seu contato. Brevemente, entraremos em contato.</b></p>
+                </div>
+                <div style="display: none;" id="erro">
+                    <p class="text-alert" id="mensagemErro"><b>Ocorreu um erro. Tente novamente mais tarde ou envie para o e-mail michel@mapti.com.br, do seu navegador.</b></p>
+                </div>
+                
+                <form id="contact-form" name="contact-form" method="post" action="#contact">
+<!--                <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">-->
+                <div class="row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Nome" required="required">
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="widget-contact">
-                            <h5>Endereço</h5>
-
-                            <address>
-                                <strong>MAP TI</strong><br>
-                                Rua dos Tintureiros, 213A - Bangu<br>
-                                Rio de Janeiro, RJ, Brasil - CEP 21.820-170<br>
-                                <abbr title="Phone">Telefones:</abbr> (21) 3159-1591 / (21) 98243-1674<br/>
-                                <img src="img/whatsapp-icon.png" title="Whatsapp">(21) 98243-1674
-                            </address>
-
-                            <address>
-                                <strong>E-mail</strong><br>
-                                <a href="mailto:pereira.michel@gmail.com">pereira.michel@gmail.com</a>
-
-                            </address>	
-                            <address>
-                                <strong>Estamos nas redes sociais</strong><br>
-                                <ul class="company-social">
-                                    <li class="social-facebook"><a href="https://www.facebook.com/pereira.michel1" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-twitter"><a href="https://www.twitter.com/pereiramichel" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <!--<li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>-->
-                                    <!--<li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>-->
-                                </ul>	
-                            </address>					
-
-                        </div>	
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Endereço de E-mail" required="required">
                     </div>
-                </div>	
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="titulo" class="form-control" placeholder="Assunto" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="mensagem" id="mensagem" class="form-control" rows="4" placeholder="Digite sua mensagem" required="required"></textarea>
+                </div>                        
+                <div class="form-group">
+                    <button type="submit" class="btn-submit" onclick="javascript: ativaMensagem()">Enviar</button>
+                </div>
+              </form>
 
             </div>
-        </section>
-        <!-- /Section: contact -->
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="wow shake" data-wow-delay="0.4s">
-                            <div class="page-scroll marginbot-30">
-                                <a href="#intro" id="totop" class="btn btn-circle">
-                                    <i class="fa fa-angle-double-up animated"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p>&copy;Copyright 2015 - MAP TI. Todos os direitos reservados.</p>
-                    </div>
-                </div>	
+            <div class="col-sm-6">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <p>
+                    Preencha todos os campos. Fique à vontade para qualquer forma de comunicação.
+                </p>
+                <ul class="address">
+                  <li><i class="fa fa-map-marker"></i> <span> Endereço:</span> Rua dos Tintureiros, 213 </li>
+                  <li><i class="fa fa-phone"></i> <span> Telefone:</span> +55 21 3591-1534  </li>
+                  <li><i class="fa fa-whatsapp"></i> <span> Whatsapp:</span> +55 21 98243-1674  </li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:michel@mapti.com.br"> michel@mapti.com.br</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.mapti.com.br</a></li>
+                </ul>
+              </div>                            
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section><!--/#contact-->
+  <footer id="footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="text-center">
+                <p>&copy; 2016 MAP TI</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <!-- Core JavaScript Files -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>	
-        <script src="js/jquery.scrollTo.js"></script>
-        <script src="js/wow.min.js"></script>
-        <!-- Custom Theme JavaScript -->
-        <script src="js/custom.js"></script>
-        <?php
-        error_reporting(E_ALL);
-        error_reporting(E_STRICT);
-        require_once("./phpmailer/class.phpmailer.php");
-        require_once("./controller/constantes.php");
-        date_default_timezone_set('America/Sao_Paulo');
-        $ip = getenv("REMOTE_ADDR");
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+    
+  <script>
+      function ativaMensagem(){
+          document.getElementById('sucesso').style.display="none";
+          document.getElementById('erro').style.display="none";
+          document.getElementById('mensagem').style.display="block";
+      }
         
+  </script>
+  
+                <?php
+                error_reporting(E_ALL);
+                error_reporting(E_STRICT);
+                $ip = getenv("REMOTE_ADDR");
+                if ($_POST) {
+                    $send = new sendmessage();
 
-        echo "<br>Lido o processo de identificação de erros e classes.";
+                    $nome = filter_input(INPUT_POST, 'name');
+                    $email = filter_input(INPUT_POST, 'email');
+                    $titulo = filter_input(INPUT_POST, 'titulo');
+                    $mensagem = filter_input(INPUT_POST, 'mensagem');
+                    
+                    $send->setNome($nome);
+                    $send->setEmail($email);
+                    $send->setTitulo($titulo);
+                    $send->setMensagem($mensagem);
+                    $send->enviaMensagem();
 
-        $nome = filter_input(INPUT_POST, 'nome');
-        $email = filter_input(INPUT_POST, 'email');
-        $motivo = filter_input(INPUT_POST, 'motivo');
-        $mensagem = filter_input(INPUT_POST, 'mensagem');
-
-        echo "<br>Recebido os dados.";
-        echo "<br>||||||||||||||||||||||||||| INFORMAÇÕES |||||||||||||||||||||||||||";
-        echo "<br>" . $nome;
-        echo "<br>" . $email;
-        echo "<br>" . $motivo;
-        echo "<br>" . $mensagem;
-        echo "<br>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
-        echo "<br>";
-
-        $mail = new PHPMailer();
-        $mail->SetLanguage("br");
-//        $mail->IsSMTP(true);
-        $mail->IsMail();
-        $mail->IsHTML(true);
-        $mail->From = USERGMAIL;  //email do remetente
-        $mail->FromName = "MAP TI";   //Nome de formatado do remetente
-        $mail->CharSet = "UTF-8";
-
-        echo "<br>Recebido a classe PHPMailer...";
-
-//SMTP
-//        $mail->isSMTP();
-//$mail->Host = "tls://smtp.gmail.com:465";    //Seu servidor SMTP
-        $mail->Host = "smtp.gmail.com";    //Seu servidor SMTP
-        $mail->Mailer = "smtp";                 //Usando protocolo SMTP
-        $mail->Port = "465"; // 25, 465, 587, 995 (pop) SSL - 465/TLS - 587
-//        $mail->SMTPSecure = "ssl";
-        $mail->SMTPDebug = 1;
-        $mail->SetLanguage("br", "phpmailer/language/");
-//fim SMTP
-
-        echo "<br>Recebido os dados SMTP";
-
-        $mail->AddAddress(USERGMAIL);     //O destino do email
-        $mail->AddBCC($email);     //Envio com cópia oculta
-        $mail->Subject = "MAP TI - Contato"; //Assunto do email
-        $mail->WordWrap = 50;
-
-        echo "Lido os processos de destino do e-mail.";
-
-        $font = "arial";
-        $tamanho = 2;
-        $imagem = "http://www.mapti.com.br/img/logoMapti60x30.png";
-
-        $mail->Body = "<br>"; //Body of the message
-
-        $mail->Body .= "<font face=$font size='$tamanho'>";
+                }
+                ?>                
 
 
-        $mail->Body .= "<font face=$font size='3'><b>MAP TI - " . $motivo . "</b></font>";
-        $mail->Body .= "<br><hr>";
-        $mail->Body .= "<br><br>";
-        $mail->Body .= "Prezado Sr(a) " . $nome;
-        $mail->Body .= "<br><br>";
-        $mail->Body .= "Agradecemos pelo seu contato. Retornaremos o mais rápido possível. Segue abaixo os dados informados: ";
-        $mail->Body .= "<br><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'><b>Nome</b>: " . $nome . "</font><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'><b>E-mail</b>: " . $email . "</font><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'><b>Motivo do contato</b>: " . $motivo . "</font><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'><b>Mensagem</b>: <br/>" . $mensagem . "</font><br>";
-        $mail->Body .= "<br><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'>Atenciosamente,</font><br><br>";
-        $mail->Body .= "<font face=$font size='$tamanho'>MAP TI</font><br>";
-        $mail->Body .= "<br><hr size='2'>";
-        $mail->Body .= "<tr>";
-        $mail->Body .= "    <td valign='top'>";
-        $mail->Body .= "        <a href='http://www.mapti.com.br' target='_blank' title='Acesse o site'><img src='http://www.mapti.com.br/img/logoMapti60x30.png' width='130' height='100'></a>";
-        $mail->Body .= "    </td>";
-        $mail->Body .= "    <td valign='top'>";
-        $mail->Body .= "        <font color='#333333'><br>MAP TI</font><br><br>";
-        $mail->Body .= "        <font size='$tamanho'>Telefones: (21) 3159-1391 / (21) 98243-1674</font><br>";
-        $mail->Body .= "        <a href='http://www.mapti.com.br' target='_blank'><font size='2'>http://www.mapti.com.br</font></a><br>";
-        $mail->Body .= "    </td>";
-        $mail->Body .= "</tr>";
-        $mail->Body .= "<tr>";
-        $mail->Body .= "    <td>&nbsp;";
-        $mail->Body .= "    </td>";
-        $mail->Body .= "    <td valign='top'>";
-        $mail->Body .= "        <a href='mailto:pereira.michel@gmail.com' target='_blank'><img src='http://www.mapti.com.br/img/email.png'></a>";
-        $mail->Body .= "        <a href='https://www.facebook.com/pereira.michel1' target='_blank'><img src='http://www.mapti.com.br/img/facebook.png'></a>";
-        $mail->Body .= "        <a href='https://www.twitter.com/pereiramichel' target='_blank'><img src='http://www.mapti.com.br/img/profile_twitter.png'></a>";
-        $mail->Body .= "    </td>";
-        $mail->Body .= "</tr>";
-        $mail->Body .= "<br><br>";
-
-        $mail->Body.='</font>';
-
-        echo "<br>Lido e processado o body da mensagem";
-//echo "<br>|||||||||||||||||||||||||||| CORPO DA MENSAGEM ||||||||||||||||||||||||||||";
-//echo "<br>".$mail->Body;
-//echo "<br>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
-
-
-        $mail->SMTPAuth = "true";
-        $mail->Username = USERGMAIL; // Utilize uma conta valida para seu servidor
-        $mail->Password = PASSWGMAIL;
-
-        echo "<br>Lido a autenticação do SMTP";
-        echo "<br>|||||||||||||||||||| DESCRIÇÃO SMTP ||||||||||||||||||||";
-        echo "<br>" . $mail->SMTPAuth;
-        echo "<br>" . $mail->Username;
-        echo "<br>" . $mail->Password;
-        echo "<br>" . $mail->Port;
-        echo "<br>" . $mail->Host;
-        echo "<br>" . $mail->Mailer."<br>";
-
-        if (!$mail->Send()) { //Check for result of sending mail
-//    header("Location: index.php&mensagem=fail");
-            echo "<br>Falha no envio<br>";
-            echo "<br>".var_dump($mail->ErrorInfo);
-        } else {
-//    header("Location: index.php&mensagem=success");
-            echo "<br>Sucesso no envio";
-        }
-//if(filter_input(INPUT_GET, 'mensagem') == "success"){
-//    echo "<h4>Mensagem enviada com sucesso!</h4>";
-//}else if(filter_input(INPUT_GET, 'mensagem') == "fail"){
-//    echo "Mensagem não enviada. Erro: ".$mail->ErrorInfo;
-//}
-        echo "<br>Enviado?";
-        ?>
-
-    </body>
-
+</body>
 </html>
