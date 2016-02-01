@@ -98,10 +98,11 @@ if ($erro != "") {
                         $titulo->telaSuperior();
 
                         ?>
-                        <p style="height: 150px;">&nbsp;</p>
-                        <!--<img src="../images/locker_button.png">-->
-                        <div style="color: #fff;">ACESSO RESTRITO</div>
-                        <p style="height: 30px;">&nbsp;</p>
+                        <p style="height: 125px;">&nbsp;</p>
+<!--                        <div style="background-image: url('../images/acessoRestritoMAPTI.png'); background-repeat: no-repeat; width: 250px;">&nbsp;</div>-->
+                        <img src="../images/acessoRestritoMAPTI.png" width="250">
+                        <!--<div style="color: #fff;">ACESSO RESTRITO</div>-->
+                        <p style="height: 20px;">&nbsp;</p>
                         <?php
                         $titulo->telaLogin();
                         ?>
