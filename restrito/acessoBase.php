@@ -7,8 +7,10 @@ ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
 require_once 'classes/classeLogin.php';
+require_once './conection/conexao.php';
 
 $erro = (int) filter_input(INPUT_GET, 'erro');
+
 
 /* @var $_POST type */
 $nomeMail = utf8_decode(filter_input(INPUT_POST, 'login'));
@@ -103,12 +105,29 @@ if ($erro != "") {
                         <div id="acessoRestrito">ACESSO RESTRITO</div>
                         <p style="height: 20px;">&nbsp;</p>
                         <?php
-                            $titulo->telaLogin();
-                            
+                        echo "<form name='base' method='get' action='#'>";
+                            echo "<p style='color: #fff;'>Informe a palavra: </p>";
+                            echo "<input type='text' name='palavra'><br/><br/>";
+                            echo "<button type='submit'>Converter</button>";
+                        echo "</form>";
+                        
+                        $valor = filter_input(INPUT_GET, 'palavra');
+                        
+                        if($valor){
+                            echo "<br/><br/>";
+                            echo "<p style='color: #fff; font-weight: bold;'>Return: </p>";
+                            echo "<p style='color: #fff'>".base64_encode($valor)."</p>";
+                        }
+                        
                         ?>
 
                         <br/>
                         <?php
+                            $conexao = new conexao();
+                            $conexao->getConnectionLocal();
+                        
+                        
+                        
                         switch ($erro) {
                             case 1: echo "<div class='text-center'><br><p id='logint'><font color='red'>Usuário e/ou senha inválido</font></p></div>";
                                 break;

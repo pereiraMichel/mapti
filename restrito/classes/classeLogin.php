@@ -1,7 +1,7 @@
 <?php
 
 
-class classes {
+class classeLogin {
 
     public function telaSuperior(){
        
@@ -13,7 +13,7 @@ class classes {
     
     public function telaLogin(){
 //        echo "<p style='height: 200px;'>&nbsp;</p>";
-        echo "<form id='contact-form' name='contact-form' method='post' action='#'>";
+        echo "<form id='contact-form' name='contact-form' method='post' action='sistema/index.php'>";
         echo "  <div class='row wow fadeInUp' data-wow-duration='1000ms' data-wow-delay='300ms'>";
         echo "      <div class='col-sm-6'>";
         echo "          <div class='form-group'>";

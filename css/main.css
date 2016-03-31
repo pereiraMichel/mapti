@@ -981,4 +981,11 @@ ul.address {
 
 /*Presets*/
 
-
+#acessoRestrito
+{
+    height: 50px;
+    font-family: verdana;
+    font-size: 20px;
+    color: #fff;
+    
+}
