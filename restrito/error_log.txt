@@ -177,3 +177,119 @@
 [25-Feb-2016 02:57:08 UTC] PHP Stack trace:
 [25-Feb-2016 02:57:08 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acessoBase.php:0
 [25-Feb-2016 02:57:08 UTC] PHP   2. conexao->getConnectionLocal() C:\wamp\www\mapti\restrito\acessoBase.php:127
+[08-Apr-2016 14:22:16 UTC] PHP Warning:  require_once(../classes/classeLogin.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\restrito\primeiroAcesso.php on line 13
+[08-Apr-2016 14:22:16 UTC] PHP Stack trace:
+[08-Apr-2016 14:22:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 14:22:16 UTC] PHP Fatal error:  require_once(): Failed opening required '../classes/classeLogin.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\restrito\primeiroAcesso.php on line 13
+[08-Apr-2016 14:22:16 UTC] PHP Stack trace:
+[08-Apr-2016 14:22:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:23:18 UTC] PHP Warning:  require_once(../conection/conexao.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 44
+[08-Apr-2016 19:23:18 UTC] PHP Stack trace:
+[08-Apr-2016 19:23:18 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:23:18 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:110
+[08-Apr-2016 19:23:18 UTC] PHP Fatal error:  require_once(): Failed opening required '../conection/conexao.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 44
+[08-Apr-2016 19:23:18 UTC] PHP Stack trace:
+[08-Apr-2016 19:23:18 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:23:18 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:110
+[08-Apr-2016 19:26:12 UTC] PHP Warning:  require_once(../conection/conexao.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 44
+[08-Apr-2016 19:26:12 UTC] PHP Stack trace:
+[08-Apr-2016 19:26:12 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:26:12 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:111
+[08-Apr-2016 19:26:12 UTC] PHP Fatal error:  require_once(): Failed opening required '../conection/conexao.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 44
+[08-Apr-2016 19:26:12 UTC] PHP Stack trace:
+[08-Apr-2016 19:26:12 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:26:12 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:111
+[08-Apr-2016 19:30:14 UTC] PHP Fatal error:  Call to undefined method classeLogin::getCargos() in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 73
+[08-Apr-2016 19:30:14 UTC] PHP Stack trace:
+[08-Apr-2016 19:30:14 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[08-Apr-2016 19:30:14 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:112
+[08-Apr-2016 19:36:21 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in C:\wamp\www\mapti\restrito\conection\conexao.php on line 39
+[08-Apr-2016 19:36:21 UTC] PHP Stack trace:
+[08-Apr-2016 19:36:21 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acessoBase.php:0
+[08-Apr-2016 19:36:21 UTC] PHP   2. conexao->getConnectionLocal() C:\wamp\www\mapti\restrito\acessoBase.php:128
+[08-Apr-2016 19:36:21 UTC] PHP   3. mysql_connect() C:\wamp\www\mapti\restrito\conection\conexao.php:39
+[08-Apr-2016 19:36:28 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in C:\wamp\www\mapti\restrito\conection\conexao.php on line 39
+[08-Apr-2016 19:36:28 UTC] PHP Stack trace:
+[08-Apr-2016 19:36:28 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acessoBase.php:0
+[08-Apr-2016 19:36:28 UTC] PHP   2. conexao->getConnectionLocal() C:\wamp\www\mapti\restrito\acessoBase.php:128
+[08-Apr-2016 19:36:28 UTC] PHP   3. mysql_connect() C:\wamp\www\mapti\restrito\conection\conexao.php:39
+[09-Apr-2016 00:28:58 UTC] PHP Fatal error:  Class 'classeStatus' not found in C:\wamp\www\mapti\restrito\classes\classeLogin.php on line 56
+[09-Apr-2016 00:28:58 UTC] PHP Stack trace:
+[09-Apr-2016 00:28:58 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:28:58 UTC] PHP   2. classeLogin->primeiroAcesso() C:\wamp\www\mapti\restrito\primeiroAcesso.php:146
+[09-Apr-2016 00:29:48 UTC] PHP Warning:  mysql_close(): supplied resource is not a valid MySQL-Link resource in C:\wamp\www\mapti\restrito\classes\classeUsuario.php on line 104
+[09-Apr-2016 00:29:48 UTC] PHP Stack trace:
+[09-Apr-2016 00:29:48 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:29:48 UTC] PHP   2. classeUsuario->inserirUsuario() C:\wamp\www\mapti\restrito\primeiroAcesso.php:55
+[09-Apr-2016 00:29:48 UTC] PHP   3. classeUsuario->verificaUltimoId() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:115
+[09-Apr-2016 00:29:48 UTC] PHP   4. mysql_close() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:104
+[09-Apr-2016 00:31:47 UTC] PHP Warning:  mysql_close(): supplied resource is not a valid MySQL-Link resource in C:\wamp\www\mapti\restrito\classes\classeUsuario.php on line 104
+[09-Apr-2016 00:31:47 UTC] PHP Stack trace:
+[09-Apr-2016 00:31:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:31:47 UTC] PHP   2. classeUsuario->inserirUsuario() C:\wamp\www\mapti\restrito\primeiroAcesso.php:57
+[09-Apr-2016 00:31:47 UTC] PHP   3. classeUsuario->verificaUltimoId() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:115
+[09-Apr-2016 00:31:47 UTC] PHP   4. mysql_close() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:104
+[09-Apr-2016 00:32:21 UTC] PHP Warning:  mysql_close(): supplied resource is not a valid MySQL-Link resource in C:\wamp\www\mapti\restrito\classes\classeUsuario.php on line 104
+[09-Apr-2016 00:32:21 UTC] PHP Stack trace:
+[09-Apr-2016 00:32:21 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:32:21 UTC] PHP   2. classeUsuario->inserirUsuario() C:\wamp\www\mapti\restrito\primeiroAcesso.php:57
+[09-Apr-2016 00:32:21 UTC] PHP   3. classeUsuario->verificaUltimoId() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:115
+[09-Apr-2016 00:32:21 UTC] PHP   4. mysql_close() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:104
+[09-Apr-2016 00:37:27 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, boolean given in C:\wamp\www\mapti\restrito\classes\classeUsuario.php on line 131
+[09-Apr-2016 00:37:27 UTC] PHP Stack trace:
+[09-Apr-2016 00:37:27 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:37:27 UTC] PHP   2. classeUsuario->inserirUsuario() C:\wamp\www\mapti\restrito\primeiroAcesso.php:57
+[09-Apr-2016 00:37:27 UTC] PHP   3. mysql_close() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:131
+[09-Apr-2016 00:39:13 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, boolean given in C:\wamp\www\mapti\restrito\classes\classeUsuario.php on line 131
+[09-Apr-2016 00:39:13 UTC] PHP Stack trace:
+[09-Apr-2016 00:39:13 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\primeiroAcesso.php:0
+[09-Apr-2016 00:39:13 UTC] PHP   2. classeUsuario->inserirUsuario() C:\wamp\www\mapti\restrito\primeiroAcesso.php:57
+[09-Apr-2016 00:39:13 UTC] PHP   3. mysql_close() C:\wamp\www\mapti\restrito\classes\classeUsuario.php:131
+[09-Apr-2016 00:42:34 UTC] PHP Warning:  require_once(../conection/conexao.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\restrito\classes\classeAcesso.php on line 34
+[09-Apr-2016 00:42:34 UTC] PHP Stack trace:
+[09-Apr-2016 00:42:34 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:42:34 UTC] PHP   2. classeAcesso->validaUsuario() C:\wamp\www\mapti\restrito\acesso.php:31
+[09-Apr-2016 00:42:34 UTC] PHP Fatal error:  require_once(): Failed opening required '../conection/conexao.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\restrito\classes\classeAcesso.php on line 34
+[09-Apr-2016 00:42:34 UTC] PHP Stack trace:
+[09-Apr-2016 00:42:34 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:42:34 UTC] PHP   2. classeAcesso->validaUsuario() C:\wamp\www\mapti\restrito\acesso.php:31
+[09-Apr-2016 00:43:49 UTC] PHP Warning:  require_once(../conection/conexao.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\restrito\classes\classeAcesso.php on line 34
+[09-Apr-2016 00:43:49 UTC] PHP Stack trace:
+[09-Apr-2016 00:43:49 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:43:49 UTC] PHP   2. classeAcesso->validaUsuario() C:\wamp\www\mapti\restrito\acesso.php:32
+[09-Apr-2016 00:43:49 UTC] PHP Fatal error:  require_once(): Failed opening required '../conection/conexao.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\restrito\classes\classeAcesso.php on line 34
+[09-Apr-2016 00:43:49 UTC] PHP Stack trace:
+[09-Apr-2016 00:43:49 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:43:49 UTC] PHP   2. classeAcesso->validaUsuario() C:\wamp\www\mapti\restrito\acesso.php:32
+[09-Apr-2016 00:44:15 UTC] PHP Warning:  mysql_close(): supplied resource is not a valid MySQL-Link resource in C:\wamp\www\mapti\restrito\classes\classeAcesso.php on line 46
+[09-Apr-2016 00:44:15 UTC] PHP Stack trace:
+[09-Apr-2016 00:44:15 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:44:15 UTC] PHP   2. classeAcesso->validaUsuario() C:\wamp\www\mapti\restrito\acesso.php:32
+[09-Apr-2016 00:44:15 UTC] PHP   3. mysql_close() C:\wamp\www\mapti\restrito\classes\classeAcesso.php:46
+[09-Apr-2016 00:48:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 00:48:49 UTC] PHP Stack trace:
+[09-Apr-2016 00:48:49 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:48:49 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33
+[09-Apr-2016 00:49:10 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 00:49:10 UTC] PHP Stack trace:
+[09-Apr-2016 00:49:10 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:49:10 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33
+[09-Apr-2016 00:55:32 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 00:55:32 UTC] PHP Stack trace:
+[09-Apr-2016 00:55:32 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 00:55:32 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33
+[09-Apr-2016 02:05:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 02:05:13 UTC] PHP Stack trace:
+[09-Apr-2016 02:05:13 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 02:05:13 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33
+[09-Apr-2016 16:40:27 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 16:40:27 UTC] PHP Stack trace:
+[09-Apr-2016 16:40:27 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 16:40:27 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33
+[09-Apr-2016 16:58:22 UTC] PHP Notice:  Undefined index: usuario in C:\wamp\www\mapti\restrito\sistema\index.php on line 68
+[09-Apr-2016 16:58:22 UTC] PHP Stack trace:
+[09-Apr-2016 16:58:22 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0
+[09-Apr-2016 16:58:48 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 33
+[09-Apr-2016 16:58:48 UTC] PHP Stack trace:
+[09-Apr-2016 16:58:48 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\acesso.php:0
+[09-Apr-2016 16:58:48 UTC] PHP   2. session_start() C:\wamp\www\mapti\restrito\acesso.php:33

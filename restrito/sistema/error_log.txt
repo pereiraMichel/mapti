@@ -1,0 +1,17 @@
+[09-Apr-2016 16:43:37 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\wamp\www\mapti\restrito\view\vMenu.php on line 42
+[09-Apr-2016 16:43:37 UTC] PHP Stack trace:
+[09-Apr-2016 16:43:37 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0
+[09-Apr-2016 16:57:53 UTC] PHP Notice:  Undefined index: usuario in C:\wamp\www\mapti\restrito\sistema\index.php on line 67
+[09-Apr-2016 16:57:53 UTC] PHP Stack trace:
+[09-Apr-2016 16:57:53 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0
+[09-Apr-2016 16:58:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in C:\wamp\www\mapti\restrito\acesso.php on line 4
+[09-Apr-2016 16:58:22 UTC] PHP Stack trace:
+[09-Apr-2016 16:58:22 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0
+[09-Apr-2016 16:58:22 UTC] PHP   2. require_once() C:\wamp\www\mapti\restrito\sistema\index.php:17
+[09-Apr-2016 16:58:22 UTC] PHP   3. session_start() C:\wamp\www\mapti\restrito\acesso.php:4
+[09-Apr-2016 16:58:34 UTC] PHP Notice:  Undefined index: usuario in C:\wamp\www\mapti\restrito\sistema\index.php on line 67
+[09-Apr-2016 16:58:34 UTC] PHP Stack trace:
+[09-Apr-2016 16:58:34 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0
+[09-Apr-2016 16:58:48 UTC] PHP Notice:  Undefined index: usuario in C:\wamp\www\mapti\restrito\sistema\index.php on line 67
+[09-Apr-2016 16:58:48 UTC] PHP Stack trace:
+[09-Apr-2016 16:58:48 UTC] PHP   1. {main}() C:\wamp\www\mapti\restrito\sistema\index.php:0

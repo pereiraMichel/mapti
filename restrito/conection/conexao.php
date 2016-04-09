@@ -40,6 +40,11 @@ class conexao {
 
             mysql_select_db($this->database, $conecta);
             mysql_set_charset('utf8', $conecta);
+
+//            echo "Servidor: ".$this->servidor."\n";
+//            echo "Usuário: ".$this->loginBanco."\n";
+//            echo "Senha: ".$this->senhaBanco."\n";
+//            echo "Database: ".$this->database."\n";
             
         }catch(Exception $ex){
             echo "Ocorreu um erro na conexão. Erro: ".$ex->getMessage();

@@ -6,8 +6,27 @@ ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
+session_start();
+
+if(!$_SESSION['acessoLiberado']){
+    header("Location: ../acesso.php");
+}
+
 require_once "../conection/conexao.php";
-    
+require_once "../classes/classeUsuario.php";
+require_once "../view/vMenu.php";
+
+$logoff = filter_input(INPUT_GET, 'saida');
+
+if($logoff){
+    session_destroy();
+    header("Location: ../acesso.php");
+}
+
+$idUsuario = $_SESSION['idUsuario'];
+
+
+
     
 ?>
 <html lang="en">
@@ -40,44 +59,28 @@ require_once "../conection/conexao.php";
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >MAP TI - MENU</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <?php
+    
+    $menu = new vMenu();
+    $menu->menuNavegacao();
+        
+    ?>
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>BEM VINDO AO CLOUD SUPPORT</h1>
-            <h3>Acesse o botão "MENU" para as demais solicitações</h3>
+            <label class="text-info">Usuário logado: <?php echo $_SESSION['login']; ?> - Empresa: Teste</label>
+            <br/><br/>
+            <h1>BEM VINDO AO <img src="../../images/CloudSupportTelaInicial.png" title="Cloud Support - MAP TI"></h1>
+            <h3>Acesse o botão "MENU" ao lado para as demais solicitações</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#about" class="btn btn-dark btn-lg">Abrir um Chamado</a>
         </div>
+
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="seuperfil" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -92,11 +95,11 @@ require_once "../conection/conexao.php";
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="servicos" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2>Serviços Contratados</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">

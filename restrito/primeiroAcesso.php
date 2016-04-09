@@ -1,34 +1,73 @@
 <?php
 //ACESSO RESTRITO
 
+session_start();
+
+$_SESSION['acessoLiberado'] = false;
+
 ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
 require_once 'classes/classeLogin.php';
-require_once './conection/conexao.php';
+require_once 'classes/classeUsuario.php';
+require_once 'classes/classeTipoAcesso.php';
+require_once 'classes/classeCliente.php';
+require_once 'classes/classeStatus.php';
+require_once 'conection/conexao.php';
+require_once 'controller/constantes.php';
 
 $erro = (int) filter_input(INPUT_GET, 'erro');
+$formulario = (boolean) filter_input(INPUT_GET, 'form');
+(int) $autorizado = 0;
 
-//O objetivo desse arquivo é para converter caracteres em base64
+if($formulario){
+    $acesso = filter_input(INPUT_GET, 'acesso');
+    if($acesso != ""){
+        (int) $autorizado = 1;
+    }
+//}else{
+//    echo "<meta HTTP-EQUIV='refresh' CONTENT='5;URL=primeiroAcesso.php'>";
 
-/* @var $_POST type */
-$nomeMail = utf8_decode(filter_input(INPUT_POST, 'login'));
-$senha = utf8_decode(filter_input(INPUT_POST, 'senha'));
+}
 
-if (strlen($nomeMail) != 0 || strlen($senha) != 0) {
-    
+if($_POST){
+    /* @var $_POST type */
+    $nome = addslashes(utf8_decode(filter_input(INPUT_POST, 'login')));
+    $senha = addslashes(utf8_decode(filter_input(INPUT_POST, 'senha')));
+    $email = addslashes(utf8_decode(filter_input(INPUT_POST, 'email')));
+    $cliente = addslashes(utf8_decode(filter_input(INPUT_POST, 'cliente')));
+    $tipoAcesso = addslashes(utf8_decode(filter_input(INPUT_POST, 'tipoAcesso')));
+    $dataCadastro = addslashes(utf8_decode(filter_input(INPUT_POST, 'dataCadastro')));
+    $dataAlteracao = addslashes(utf8_decode(filter_input(INPUT_POST, 'dataAlteracao')));
+    $statusUsuario = addslashes(utf8_decode(filter_input(INPUT_POST, 'statusUsuario')));
 
+    $novoUsuario = new classeUsuario();
+
+    $novoUsuario->setNome($nome);
+    $novoUsuario->setSenha($senha);
+    $novoUsuario->setEmail($email);
+    $novoUsuario->setCodCliente($cliente);
+    $novoUsuario->setCodTipoAcesso($tipoAcesso);
+    $novoUsuario->setDataCadastro($dataCadastro);
+    $novoUsuario->setDataAlteracao($dataAlteracao);
+    $novoUsuario->setCodStatusUsuario($statusUsuario);
+
+    if($novoUsuario->inserirUsuario()){
+        header("Location: primeiroAcesso.php?form=true&acesso=sucesso");
+    }else{
+        header("Location: primeiroAcesso.php?form=false");
+    }
 }
 ?>
 <!DOCTYPE html>
 <html >
     <head>
         <meta charset="UTF-8">
-        <title>MAP TI - Acesso Restrito</title>
+        <title>MAP TI - Primeiro Acesso</title>
 
-        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link href="../css/animate.min.css" rel="stylesheet"> 
         <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -98,41 +137,31 @@ if ($erro != "") {
 
                         <?php
                         $titulo = new classeLogin();
-                        $titulo->telaSuperior();
+                        $titulo->telaSuperiorSupport();
 
                         ?>
                         <p style="height: 125px;">&nbsp;</p>
                         <!--<img src="../images/acessoRestritoMAPTI.png" width="250">-->
-                        <div id="acessoRestrito">ACESSO RESTRITO</div>
+                        <div id="acessoRestrito"><?php echo TITPRIMEIROACESSO; ?></div>
                         <p style="height: 20px;">&nbsp;</p>
                         <?php
-                        echo "<form name='base' method='get' action='#'>";
-                            echo "<p style='color: #fff;'>Informe a palavra: </p>";
-                            echo "<input type='text' name='palavra'><br/><br/>";
-                            echo "<button type='submit'>Converter</button>";
-                        echo "</form>";
-                        
-                        $valor = filter_input(INPUT_GET, 'palavra');
-                        
-                        if($valor){
-                            echo "<br/><br/>";
-                            echo "<p style='color: #fff; font-weight: bold;'>Return: </p>";
-                            echo "<p style='color: #fff'>".base64_encode($valor)."</p>";
+                        switch ($autorizado) {
+                            case "1": 
+                                echo "<div class='text-center'><br><p id='logint'><label class='text-success'>Acesso incluso com sucesso!</label></p></div>";
+                                echo "<meta HTTP-EQUIV='refresh' CONTENT='5;URL=primeiroAcesso.php'>";
+                                break;
                         }
+                        $titulo->primeiroAcesso();
                         
                         ?>
 
                         <br/>
                         <?php
-                            $conexao = new conexao();
-                            $conexao->getConnectionLocal();
-                        
-                        
-                        
                         switch ($erro) {
                             case 1: echo "<div class='text-center'><br><p id='logint'><font color='red'>Usuário e/ou senha inválido</font></p></div>";
                                 break;
                         }
+
                         ?>
 
 

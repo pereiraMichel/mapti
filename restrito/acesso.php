@@ -1,12 +1,18 @@
 <?php
 //ACESSO RESTRITO
 
+session_start();
+
+$_SESSION['acessoLiberado'] = false;
+
 ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 error_reporting(E_ALL);
 
 require_once 'classes/classeLogin.php';
+require_once 'classes/classeAcesso.php';
+require_once 'conection/conexao.php';
 
 $erro = (int) filter_input(INPUT_GET, 'erro');
 
@@ -14,8 +20,25 @@ $erro = (int) filter_input(INPUT_GET, 'erro');
 $nomeMail = utf8_decode(filter_input(INPUT_POST, 'login'));
 $senha = utf8_decode(filter_input(INPUT_POST, 'senha'));
 
-if (strlen($nomeMail) != 0 || strlen($senha) != 0) {
+$login = addslashes($nomeMail);
+$pass = addslashes($senha);
+
+if (strlen($login) != 0 || strlen($pass) != 0) {
+    $acesso = new classeAcesso();
     
+    $acesso->setLogin($login);
+    $acesso->setSenha($pass);
+    
+    if($acesso->validaUsuario()){
+        session_start();
+        $_SESSION['login'] = $login;
+        $_SESSION['idUsuario'] = $acesso->getIdUsuario();
+        
+        $_SESSION['acessoLiberado'] = true;
+        
+        header("Location: sistema/index.php?a=".base64_encode($_SESSION['acessoLiberado']));
+        
+    }
 
 }
 ?>
@@ -96,7 +119,6 @@ if ($erro != "") {
                         <?php
                         $titulo = new classeLogin();
                         $titulo->telaSuperior();
-
                         ?>
                         <p style="height: 125px;">&nbsp;</p>
                         <!--<img src="../images/acessoRestritoMAPTI.png" width="250">-->
@@ -104,6 +126,7 @@ if ($erro != "") {
                         <p style="height: 20px;">&nbsp;</p>
                         <?php
                             $titulo->telaLogin();
+//                            echo $_SESSION['acessoLiberado'];
                             
                         ?>
 
