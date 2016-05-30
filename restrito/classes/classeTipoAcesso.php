@@ -24,13 +24,16 @@ class classeTipoAcesso {
         
     }
     
-    public function getTipoAcesso($opcao){
+    public function getTipoAcesso($opcao , $id){
         switch ($opcao){
             case null:
                 return null;
                 break;
             case 0:
                 return "SELECT * FROM tipoacesso";
+                break;
+            case 1:
+                return "SELECT * FROM tipoacesso WHERE idTipoAcesso = ".$id;
                 break;
         }
     }

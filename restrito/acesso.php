@@ -30,13 +30,15 @@ if (strlen($login) != 0 || strlen($pass) != 0) {
     $acesso->setSenha($pass);
     
     if($acesso->validaUsuario()){
+        
         session_start();
         $_SESSION['login'] = $login;
         $_SESSION['idUsuario'] = $acesso->getIdUsuario();
         
         $_SESSION['acessoLiberado'] = true;
         
-        header("Location: sistema/index.php?a=".base64_encode($_SESSION['acessoLiberado']));
+        header("Location: sistema/index.php");
+//        header("Location: sistema/index.php?a=".base64_encode($_SESSION['acessoLiberado']));
         
     }
 
@@ -159,6 +161,14 @@ if ($erro != "") {
         </div>
 
         <footer>
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <a href="../" class="label label-primary">Voltar para o site</a>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                &nbsp;
+            </div>
             <div class="col-sm-12">
                 <div class="text-center">
                     <label class="label label-primary">Acesso Restrito - MAP TI</label>

@@ -29,7 +29,16 @@ require_once './phpmailer/class.phpmailer.php';
     </head><!--/head-->
 
     <body>
-
+<!--		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- www.mapti.com.br -->
+<!--		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-9006088213361327"
+			 data-ad-slot="8123106695"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script> -->
         <!--.preloader-->
         <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
         <!--/.preloader-->
