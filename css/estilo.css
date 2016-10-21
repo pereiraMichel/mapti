@@ -1,0 +1,346 @@
+
+/*html, body, div, iframe {margin: 0px; padding: 0px}*/
+/*iframe{width: 100%; border: none; position: absolute}*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    color: #666;
+    background-color: rgba(0,0,0,.5);
+    /*padding-top: 150px;*/
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    
+}
+
+#corFontePlace
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+input,
+textarea
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+::-webkit-input-placeholder
+{
+    color: #fff;
+}
+
+:-moz-placeholder
+{
+    color: #fff;
+}
+
+::-moz-placeholder
+{
+    color: #fff;
+}
+
+:-ms-input-placeholder
+{
+    color: #fff;
+}
+
+/* ===========================
+--- Intro
+============================ */
+
+.intro {
+	width: 100%;
+	position: relative;
+	height: 100%;
+        padding: 0 0 0 0;
+        /*background-repeat: no-repeat;*/
+	background: url(../images/galeria/img15PD.jpg) no-repeat top center;
+        background-size: cover;
+        
+}
+.contato {
+	width: 100%;
+	position: relative;
+	height: 100%;
+        padding: 0 0 0 0;
+        /*background-repeat: no-repeat;*/
+	background: url(../images/galeria/img10PDF.png) no-repeat top center;
+        background-size: cover;
+        
+}
+.galeria {
+	width: 100%;
+	position: relative;
+	height: 100%;
+        padding: 0 0 0 0;
+        /*background-repeat: no-repeat;*/
+	background: url(../images/galeria/img10PDF.png) no-repeat top center;
+        background-size: cover;
+        color: #000;
+        
+}
+
+.contatoFundo section
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*opacity: 0.6;*/
+    background-color: rgba(0,0,0,.7);
+}
+.contatoFundo .row
+{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.7);
+}
+
+#intro.intro {
+	padding:20% 0 0 0;
+}
+
+.intro .slogan {
+	text-align: center;
+
+}
+
+.intro .page-scroll {
+	text-align: center;
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+.intro .slogan h2 {
+	color: #FFF;
+	text-shadow: none;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	background-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 0px;
+	border-color: #000;
+	border-style: none;
+	text-shadow: -1px 0 1px #000;
+}
+
+.intro .slogan h4 {
+	color: #fff;
+	text-shadow: -1px 1px 1px #000;
+}
+
+
+@media(min-width:767px) {
+
+    .navbar {
+        padding: 5px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+	
+    .intro {
+        height: 100%;
+        /*width: 100%;*/
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+    }
+	
+
+    .intro-text {
+        font-size: 25px;
+    }
+
+
+}
+
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+
+    
+.sessaoFundo
+{
+    position: relative;
+    background: #008000;
+    /*background: #5c97ff;*/
+    overflow: hidden;
+    width: 50%;
+    height: 200px;
+    opacity: 0.7;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* ********************* */
+/* *******TEXTO********* */
+/* ********************* */
+
+.sessaoFundo span
+{
+    /*padding: 50px;*/
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sessaoFundo section
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*opacity: 0.6;*/
+    background-color: rgba(255,255,255,.7);
+}
+
+#servicos
+{
+    /*background: rgba(255,255,255,.5);*/
+    background: url(../images/WallpaperMapTI2.png);
+    padding-top: 200px;
+    /*background: url(../images/slider/binary.png) no-repeat;*/
+    /*width: 100%;*/
+/*    height: 1000px; */
+    opacity: 0.7; 
+/*    -webkit-transition-property: opacity;
+    transition-property: opacity;*/
+    background-repeat: no-repeat;
+    background-size: cover
+/*      height: 2037px;*/
+}
+
+#fundoServicos
+{
+    opacity: 1;
+}
+
+#textoServicos
+{
+    /*position: absolute;*/
+    background-color: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+#corBrancoAlpha h3
+{
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+}
+#corBrancoAlpha
+{
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+}
+#corBrancoAlpha:hover
+{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+
+.carousel-fade .carousel-inner-new .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2037px;
+}
+
+.carousel-fade .carousel-inner-new .item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.carousel-fade .carousel-inner-new .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner-new .active.left,
+.carousel-fade .carousel-inner-new .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner-new .next.left,
+.carousel-fade .carousel-inner-new .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}

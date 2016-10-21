@@ -323,8 +323,14 @@ section {
 /*************************
 ********About CSS*******
 **************************/
+#clientes {
+  background-image: url(../images/logoMapTI1500x1000.png);
+
+  /*background-image: url(../images/about-bg.jpg);*/
+  /*padding: 60px 0;*/
+}
 #about-us {
-  background-image: url(../images/brasil.jpg);
+  background-image: url(../images/slider/dark-metal.jpg);
   /*background-image: url(../images/about-bg.jpg);*/
   padding: 60px 0;
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<contrato>
+  <dados>
+    <contratante>Jorge</contratante>
+    <sede>SP</sede>
+    <endereco1>asdfasdf</endereco1>
+    <bairro1>Campo Grande</bairro1>
+    <cidade1>asdf</cidade1>
+    <estado1>Rio de Janeiro</estado1>
+    <cep1>2123123123</cep1>
+    <cnpj>11111111111111</cnpj>
+    <inscricao>2222222222222222</inscricao>
+    <diretor>Jorgete</diretor>
+    <estadoCivil>Casado</estadoCivil>
+    <profissao>analista de sistemas</profissao>
+    <identidade>askdjfçlaksjdf</identidade>
+    <cpf>12345</cpf>
+    <enderecoDiretor>asdfasdf</enderecoDiretor>
+    <bairroDiretor>testebairro</bairroDiretor>
+    <cidadeDiretor>asdf</cidadeDiretor>
+    <estadoDiretor>SP</estadoDiretor>
+    <cepDiretor>1234567689900</cepDiretor>
+  </dados>
+</contrato>

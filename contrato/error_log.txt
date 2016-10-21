@@ -1,0 +1,217 @@
+[24-Sep-2016 02:51:54 UTC] PHP Warning:  require_once(classes/classeLogin.php): failed to open stream: No such file or directory in C:\wamp\www\mapti\contrato\index.php on line 22
+[24-Sep-2016 02:51:55 UTC] PHP Stack trace:
+[24-Sep-2016 02:51:55 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[24-Sep-2016 02:51:55 UTC] PHP Fatal error:  require_once(): Failed opening required 'classes/classeLogin.php' (include_path='.;C:\php\pear') in C:\wamp\www\mapti\contrato\index.php on line 22
+[24-Sep-2016 02:51:55 UTC] PHP Stack trace:
+[24-Sep-2016 02:51:55 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 20:53:58 UTC] PHP Fatal error:  Class 'xml' not found in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 44
+[26-Sep-2016 20:53:58 UTC] PHP Stack trace:
+[26-Sep-2016 20:53:58 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 20:53:58 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:133
+[26-Sep-2016 20:54:15 UTC] PHP Fatal error:  Class 'xml' not found in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 44
+[26-Sep-2016 20:54:15 UTC] PHP Stack trace:
+[26-Sep-2016 20:54:15 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 20:54:15 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:133
+[26-Sep-2016 22:43:24 UTC] PHP Warning:  simplexml_load_file(): xml/usuario.xml:8: parser error : Extra content at the end of the document in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:24 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:24 UTC] PHP Warning:  simplexml_load_file(): &lt;usuario&gt; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:24 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:24 UTC] PHP Warning:  simplexml_load_file(): ^ in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:24 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:24 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:24 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 140
+[26-Sep-2016 22:43:24 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:24 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:24 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:24 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP Warning:  simplexml_load_file(): xml/usuario.xml:8: parser error : Extra content at the end of the document in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:41 UTC] PHP Warning:  simplexml_load_file(): &lt;usuario&gt; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:41 UTC] PHP Warning:  simplexml_load_file(): ^ in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:41 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:41 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 140
+[26-Sep-2016 22:43:41 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:41 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:41 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:41 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP Warning:  simplexml_load_file(): xml/usuario.xml:8: parser error : Extra content at the end of the document in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:47 UTC] PHP Warning:  simplexml_load_file(): &lt;usuario&gt; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:47 UTC] PHP Warning:  simplexml_load_file(): ^ in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 132
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:132
+[26-Sep-2016 22:43:47 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 134
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 22:43:47 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 140
+[26-Sep-2016 22:43:47 UTC] PHP Stack trace:
+[26-Sep-2016 22:43:47 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 22:43:47 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 22:43:47 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:49
+[26-Sep-2016 23:09:31 UTC] PHP Notice:  Undefined index: tipo in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 59
+[26-Sep-2016 23:09:31 UTC] PHP Stack trace:
+[26-Sep-2016 23:09:31 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:09:31 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:09:31 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;xml/.xml&quot; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 143
+[26-Sep-2016 23:09:31 UTC] PHP Stack trace:
+[26-Sep-2016 23:09:31 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:09:31 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:09:31 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:61
+[26-Sep-2016 23:09:31 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:143
+[26-Sep-2016 23:09:31 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:09:31 UTC] PHP Stack trace:
+[26-Sep-2016 23:09:31 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:09:31 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:09:31 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:61
+[26-Sep-2016 23:09:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:09:31 UTC] PHP Stack trace:
+[26-Sep-2016 23:09:31 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:09:31 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:09:31 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:61
+[26-Sep-2016 23:09:31 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 151
+[26-Sep-2016 23:09:31 UTC] PHP Stack trace:
+[26-Sep-2016 23:09:31 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:09:31 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:09:31 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:61
+[26-Sep-2016 23:11:19 UTC] PHP Notice:  Undefined index: tipo in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 59
+[26-Sep-2016 23:11:19 UTC] PHP Stack trace:
+[26-Sep-2016 23:11:19 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:11:19 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:11:19 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;xml/.xml&quot; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 143
+[26-Sep-2016 23:11:19 UTC] PHP Stack trace:
+[26-Sep-2016 23:11:19 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:11:19 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:11:19 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:11:19 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:143
+[26-Sep-2016 23:11:20 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:11:20 UTC] PHP Stack trace:
+[26-Sep-2016 23:11:20 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:11:20 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:11:20 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:11:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:11:20 UTC] PHP Stack trace:
+[26-Sep-2016 23:11:20 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:11:20 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:11:20 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:11:20 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 151
+[26-Sep-2016 23:11:20 UTC] PHP Stack trace:
+[26-Sep-2016 23:11:20 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:11:20 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:11:20 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:16:54 UTC] PHP Notice:  Undefined variable: tipo in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 61
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP Notice:  Undefined variable: tipo in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 65
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;xml/.xml&quot; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 143
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:16:54 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:143
+[26-Sep-2016 23:16:54 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:16:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:16:54 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 151
+[26-Sep-2016 23:16:54 UTC] PHP Stack trace:
+[26-Sep-2016 23:16:54 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:16:54 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:16:54 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:17:16 UTC] PHP Notice:  Undefined variable: tipo in C:\wamp\www\mapti\contrato\classes\telas.class.php on line 65
+[26-Sep-2016 23:17:16 UTC] PHP Stack trace:
+[26-Sep-2016 23:17:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:17:16 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:17:16 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;xml/.xml&quot; in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 143
+[26-Sep-2016 23:17:16 UTC] PHP Stack trace:
+[26-Sep-2016 23:17:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:17:16 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:17:16 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:17:16 UTC] PHP   4. simplexml_load_file() C:\wamp\www\mapti\contrato\classes\xml.class.php:143
+[26-Sep-2016 23:17:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:17:16 UTC] PHP Stack trace:
+[26-Sep-2016 23:17:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:17:16 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:17:16 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:17:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 145
+[26-Sep-2016 23:17:16 UTC] PHP Stack trace:
+[26-Sep-2016 23:17:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:17:16 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:17:16 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
+[26-Sep-2016 23:17:16 UTC] PHP Notice:  Undefined variable: usuarioXml in C:\wamp\www\mapti\contrato\classes\xml.class.php on line 151
+[26-Sep-2016 23:17:16 UTC] PHP Stack trace:
+[26-Sep-2016 23:17:16 UTC] PHP   1. {main}() C:\wamp\www\mapti\contrato\index.php:0
+[26-Sep-2016 23:17:16 UTC] PHP   2. telas->login() C:\wamp\www\mapti\contrato\index.php:140
+[26-Sep-2016 23:17:16 UTC] PHP   3. xml->leituraXmlUsuario() C:\wamp\www\mapti\contrato\classes\telas.class.php:65
