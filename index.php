@@ -4,6 +4,7 @@
 
 require_once './classes/sendmessage.php';
 require_once './classes/Telas.php';
+//require_once './classes/telas.class.php';
 require_once './classes/Servicos.class.php';
 require_once './phpmailer/class.phpmailer.php';
 
@@ -80,9 +81,11 @@ $serv = new Servicos();
                 $tela->telaMapti();
                 break;
                     
-//            case "cli":
-//                $tela->telaClientes();
-//                break;
+            case "cli":
+                echo "<div id='servicos'>";
+                $tela->telaClientes();
+                echo "</div>";
+                break;
                     
             case "equ":
                 $tela->equipe();
@@ -91,11 +94,21 @@ $serv = new Servicos();
             case "cont":
                 $tela->telaContato();
                 break;
-            
+
             case "serv":
                 echo "<div id='servicos'";
                 $serv->telaServicos();
                 echo "</div>";
+                break;
+            
+            case "cur":
+                echo "<div id='servicos'>";
+                $serv->telaCursos();
+                echo "</div>";
+                break;
+            
+            case "gsuite":
+                $tela->telaContato();
                 break;
             
         }

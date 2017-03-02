@@ -54,28 +54,36 @@ class Telas {
     }
     
     public function telaClientes(){
-        echo "<div id='home-slider' class='carousel slide carousel-fade' data-ride='carousel' style='position: static;'>";
-        echo "  <div class='carousel-inner'>";
-        echo "      <div class='item active' style='background-image: url(images/WallpaperMapTI2.png);'>";
-        echo "          <div class='col-sm-12' style='padding-top: 550px;'>";
-        echo "          <div class='caption'>";
-        echo "              <h1 class='animated fadeInLeftBig' style='font-size: 30px;'>";
+//        echo "<div id='home-slider' class='carousel slide carousel-fade' data-ride='carousel' style='position: static;'>";
+//        echo "  <div class='carousel-inner'>";
+//        echo "      <div class='item active' style='background-image: url(images/WallpaperMapTI2.png);'>";
+        echo "          <div class='col-sm-12'>";// style='padding-top: 550px;'
+//        echo "          <div class='caption'>";//
+        echo "              <h1 style='font-size: 30px;'>";// class='animated fadeInLeftBig'
         echo "                  Clie<span>ntes</span>";
         echo "              </h1>";
-        echo "              <p class='animated fadeInRightBig'>";
-        echo "                  <img src='images/clientes/logomarcaDocumentos.png' title='Renata Neumann - Psicóloga' width='220' height='100'>&nbsp;";
-        echo "                  <img src='images/clientes/logoPaulaDesign.png' title='Paula Design Floral' width='220' height='100'>&nbsp;";
-        echo "                  <img src='images/clientes/logoPortoBellas4.png' title='Porto Bellas' width='180' height='100'>&nbsp;";
-        echo "                  <img src='images/clientes/logoRUV550x430.png' title='RedeUnaViva' width='140' height='100'>&nbsp;";
+        echo "              <p style='text-align: center;'>";// class='animated fadeInRightBig'
+        echo "                  <img src='images/clientes/RAContabil.png' title='RA Contábil' alt='RA Contábil' width='200' height='90'>&nbsp;";
+        echo "                  <img src='images/clientes/logoPortoBellas4.png' title='Porto Bellas Piscinas e Jardins' alt='Porto Bellas Piscinas e Jardins' width='150' height='100'>&nbsp;";
+        echo "                  <img src='images/clientes/logoRUV550x430.png' title='RedeUnaViva Jornada Real' alt='RedeUnaViva Jornada Real' width='140' height='100'>&nbsp;";
+        echo "                  <img src='images/clientes/logoPaulaDesign.png' title='Paula Design Floral' alt='Paula Design Floral' width='220' height='100'>&nbsp;";
+        echo "                  <img src='images/clientes/florzinha.jpg' title='Florzinha' alt='Florzinha' width='140' height='100'>&nbsp;<br><br>";
+        echo "                  <img src='images/clientes/logomarcaDocumentos.png' title='Renata Neumann - Psicóloga' alt='Renata Neumann - Psicóloga' width='200' height='100'>&nbsp;";
+        echo "                  <img src='images/clientes/LogoClinicaJabour.png' title='Centro Ambulatorial Jabour' alt='Centro Ambulatorial Jabour' width='150' height='80'>&nbsp;";
         echo "              </p>";
-//        echo "              <a data-scroll class='btn btn-start animated fadeInUpBig' href='index.php?m=serv'>";
-//        echo "                  Conheça os serviços";
-//        echo "              </a>";
-        echo "          </div>";
-        echo "          </div>";
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div><!--/#Clientes-->";
+//        echo "          </div>";//fecha o caption
+        echo "          </div>";//fecha o col-sm-12
+//        echo "      </div>";//fecha o item active
+//        echo "  </div>";//fecha o carrousel-inner
+//        echo "</div><!--/#Clientes-->";//fecha o home-slider
+        echo "<p style='heigth: 20px;'>&nbsp;</p>";
+        
+        //Terceira Coluna
+        echo "<div class='col-sm-12'>";
+        echo "  <p style='text-align: center;'>";
+        echo "      <a class='btn btn-default' href='index.php'>Voltar</a>";
+        echo "  </p>";
+        echo "</div>";
         
     }
     
@@ -155,6 +163,8 @@ class Telas {
         echo "                          <a href='index.php?m=hist'>a História</a>";
 //        echo "                          <a href='index.php?m=cli'>Clientes</a>";
         echo "                          <a href='index.php?m=equ'>Equipe</a>";
+        echo "                          <a href='index.php?m=cur'>Cursos</a>";
+        echo "                          <a href='index.php?m=cli'>Clientes</a>";
         echo "                      </li>";
         echo "                  </ul>";
         echo "              </li>";
@@ -208,6 +218,14 @@ class Telas {
         echo "      </div>";//item active
         echo "  </div>";//carrousel
         echo "</div><!--/#Sobre MAP TI-->";
+        echo "<p style='heigth: 20px;'>&nbsp;</p>";
+        
+        //Terceira Coluna
+        echo "<div class='col-sm-12'>";
+        echo "  <p style='text-align: center;'>";
+        echo "      <a class='btn btn-default' href='index.php'>Voltar</a>";
+        echo "  </p>";
+        echo "</div>";
         
     }
     

@@ -51,9 +51,10 @@ class Servicos {
         //Primeira Coluna
 
         echo "<div class='col-sm-9'>";// style='background-color: #fff; opacity: .5; filter: alpha(opacity=50);'>";
-        echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-briefcase'></i> E-Commerce</h2>";
+        echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-briefcase'></i> Sites e E-Commerce</h2>";
         echo "  <p id='textoServicosMapti'>";
-        echo "      Uma das preocupações vinculadas ao site que comercializa os seus produtos ou serviços, é o objetivo de o site ter usuários diretos. Assim como o marketing digital, temos possibilidades de ter os sistemas de busca SEO e SEM. Outra principal preocupação é a segurança, da forma que o usuário tenha o retorno, como o produto sendo entregue no tempo estipulado e o recibo da compra. É muito comum, pelo menos, ter o básico de marketing digital, para que a análise tenha o retorno satisfatório.";
+        echo "      Um site na internet ajuda muitas empresas e profissionais de qualquer área ou setor, a interagir com o usuário, a conhecer os seus produtos e serviços, e até mesmo efetuar uma venda e/ou facilitar um negócio. Como o site do MAP TI, por exemplo, um meio de 'conectar' o cliente, a conhecer melhor os serviços.<br><br>";
+        echo "      Para o e-commerce, uma das preocupações vinculadas ao site que comercializa os seus produtos ou serviços, é o objetivo de o site ter usuários diretos. Assim como no marketing digital, temos possibilidades de ter os sistemas de busca SEO e SEM. Outra principal preocupação é a segurança, da forma que o usuário tenha o retorno, como o produto sendo entregue no tempo estipulado e o recibo da compra. É muito comum, pelo menos, ter o básico de marketing digital, para que a análise tenha o retorno satisfatório.";
         echo "  </p>";
         echo "</div>";
         
@@ -112,7 +113,7 @@ class Servicos {
         //Segunda Coluna
         echo "<div class='col-sm-2'>";
         echo "  <p>";
-        echo "      <img src='images/selos/analiticaWeb.png' alt='Gestão de Projetos' title='Gestão de Projetos' width='250' height='250'>";
+        echo "      <img src='images/selos/analiticaWeb.png' alt='Análise Web' title='Análise Web' width='250' height='250'>";
         echo "  </p>";
         echo "</div>";
         
@@ -130,15 +131,21 @@ class Servicos {
         //Primeira Coluna
         echo "<div class='col-sm-9'>";
         echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-terminal'></i> Sistemas Desktop, Web e Mobile (Android)</h2>";
-        echo "  <p id='textoServicosMapti'>";
-        echo "      Um sistema pode ser web (externo ou internet), desktop (interno, necessitando de instalação) ou para dispositivos móbiles (Android), porém, elaborado em cada processo de evolução do software, de forma mais fácil para atender aos clientes. Todo sistema tem uma etapa em sua construção";
+        echo "  <p id='textoServicosMapti' style='font-size: 12px;'>";
+        echo "      Um sistema pode ser web (externo ou internet), desktop (interno, necessitando de instalação no seu computador ou notebook) ou para dispositivos mobiles (Android), porém, elaborado em cada processo de evolução do software, de forma mais fácil para atender aos clientes. Todo sistema tem uma etapa na sua construção.<br><br>";
+        echo "      Quanto ao tipo de sistemas, só é esclarecido através das necessidades do cliente, abrangendo o melhor custo-benefício. As etapas são esclarecidas e monitoradas, deixando uma satisfação ao cliente em saber o andamento do processo.<br><br>";
+        echo "De forma mais esclarecedora, segue informações sobre os tipos de sistema:<br><br>";
+        echo "- Sistema Desktop (ou comum): É um sistema que necessita de instalação na sua máquina (computador ou notebook), correspondendo aos recursos de hardware do seu computador. Têm-se uma vantagem de armazenamento, pois todos os dados ficam no computador, não necessitando da internet para funcionar. E quanto à desvantagem, é manter a estabilidade do próprio computador, pois os dados são mantidos dentro do HD (Hard Disk ou Disco Rígido).<br><br>";
+        echo "- Sistema Web: É um sistema utilizado por um navegador de sua preferência (Google Chrome, Firefox, Internet Explorer ou Safari) e mantém-se na internet, não necessitando dos recursos de hardware para instalação. Comparando ao Sistema Desktop, sob vantagem, é que caso haja queda da máquina (computador ou notebook), o sistema ainda está operante. Sob a desvantagem, é o uso frequente da internet, pois sua queda torna-se inoperante. Nesse sistema, é possível o uso em dispositivos mobiles (celulares) para o uso do mesmo, embora o sistema web é adaptável para o tamanho da tela.<br><br>";
+        echo "- Sistema Mobile (Android): É um sistema utilizado somente em celulares com o Sistema Operacional Android. Contém os mesmos recursos do Sistema Desktop, assim como o seu funcionamento e configuração, pois para o uso do mesmo, é necessário instalar no celular. O ponto interessante é que um sistema em Android pode ser utilizado nas 2 (duas) formas de sistema acima, ou seja, armazenar os dados na internet e instalação no aparelho celular.<br><br>";
+        echo "Diante disso, é sempre melhor conversarmos a respeito, para saber da necessidade do cliente, assim como o melhor custo-benefício. O MAPTI encontra-se à disposição.";
         echo "  </p>";
         echo "</div>";
         
         //Segunda Coluna
         echo "<div class='col-sm-2'>";
         echo "  <p>";
-        echo "      <img src='images/selos/analiticaWeb.png' alt='Gestão de Projetos' title='Gestão de Projetos' width='250' height='250'>";
+        echo "      <img src='images/slider/software.jpg' alt='Software' title='Software' width='250' height='250'>";
         echo "  </p>";
         echo "</div>";
         
@@ -151,6 +158,34 @@ class Servicos {
         
     }
     public function servSuporte(){
+//        echo "<meta http-equiv='refresh' content='5;url=index.php?m=serv&s=ana'>";
+        
+        //Primeira Coluna
+        echo "<div class='col-sm-9'>";
+        echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-wrench'></i> Suporte Remoto</h2>";
+        echo "  <p id='textoServicosMapti'>";
+        echo "      O MAP TI trabalha com duas formas de suporte: presencial e remoto. Com melhor custo-benefício para ambos, o trabalho é somente com contrato mensal. Aceita-se trabalhos imediatos, ou manutenção correlativa mas, para melhor análise, considera-se a manutenção preventiva (contrato mensal) como melhor custo-benefício.<br><br>";
+        echo "O trabalho com manutenção correlativa é por hora, e a manutenção preventiva, por mês.<br><br>";
+        echo "A manutenção preventiva corresponde aos seguintes serviços:<br><br>";
+        echo "- Consultoria por telefone, pelo whatsapp e por e-mail;<br><br>";
+        echo "- Em caso de necessidade de peças para o computador ou notebook, o MAP TI se compromete em ir à loja, comprar a peça (fora do contrato, o cliente disponibiliza o valor), e instala a peça, munidos com a nota fiscal da loja;<br><br>";
+        echo "- Suporte remoto, ou seja, o MAP TI realiza a manutenção através do computador, sem a necessidade de estar presente. Neste recurso é indispensável a internet e têm sido um sucesso aos clientes.<br>";
+        echo "  </p>";
+        echo "</div>";
+        
+        //Segunda Coluna
+        echo "<div class='col-sm-2'>";
+        echo "  <p>";
+        echo "      <img src='images/slider/suporte.jpg' alt='Suporte' title='Suporte' width='250' height='250'>";
+        echo "  </p>";
+        echo "</div>";
+        
+        //Terceira Coluna
+        echo "<div class='col-sm-12'>";
+        echo "  <p>";
+        echo "      <a class='btn btn-default' href='index.php?m=serv'>Voltar</a>";
+        echo "  </p>";
+        echo "</div>";
         
     }
     
@@ -243,10 +278,10 @@ class Servicos {
         echo "                              <i class='fa fa-wrench' style='padding-left: 32.52777777777%;'></i>";
         echo "                          </div>";
         echo "                          <div class='service-info'>";
-        echo "                              <h3 id='corPretoAlpha'>Suporte Remoto</h3>";
+        echo "                              <h3 id='corPretoAlpha'>Suporte</h3>";
         echo "                              <p id='textoServicosMapti'>";
         echo "                                  Consiste na manutenção de computadores e notebooks, incluindo configurações. Com o auxílio da internet, há possibilidade de fazer manutenção remota em qualquer lugar que estiver. Esse recurso é um sucesso para todos os meus clientes. Lembrando que esse recurso só é possível na manutenção preventiva.";
-        echo "                                  <a data-scroll class='' href='#' id='corPretoAlpha' title='Saiba mais' alt='Saiba mais'>";// animated fadeInUpBig
+        echo "                                  <a data-scroll class='' href='index.php?m=serv&s=sup' id='corPretoAlpha' title='Saiba mais' alt='Saiba mais'>";// animated fadeInUpBig
         echo "                                      <i class='fa fa-eye'></i>";
         echo "                                  </a>";
         echo "                              </p>";
@@ -257,6 +292,93 @@ class Servicos {
         echo "                  </div>";//fecha row
         echo "              </div>";//fecha o principal
         
+    }
+
+    public function telaGSuite(){
+        echo "<meta http-equiv='refresh' content='5;url=index.php?m=gsuite'>";
+        
+        //Primeira Coluna
+        echo "<div class='col-sm-9'>";
+        echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-wrench'></i> Suporte Remoto</h2>";
+        echo "  <p id='textoServicosMapti'>";
+        echo "      O MAP TI trabalha com duas formas de suporte: presencial e remoto. Com melhor custo-benefício para ambos, o trabalho é somente com contrato mensal. Aceita-se trabalhos imediatos, ou manutenção correlativa mas, para melhor análise, considera-se a manutenção preventiva (contrato mensal) como melhor custo-benefício.<br><br>";
+        echo "O trabalho com manutenção correlativa é por hora, e a manutenção preventiva, por mês.<br><br>";
+        echo "A manutenção preventiva corresponde aos seguintes serviços:<br><br>";
+        echo "- Consultoria por telefone, pelo whatsapp e por e-mail;<br><br>";
+        echo "- Em caso de necessidade de peças para o computador ou notebook, o MAP TI se compromete em ir à loja, comprar a peça (fora do contrato, o cliente disponibiliza o valor), e instala a peça, munidos com a nota fiscal da loja;<br><br>";
+        echo "- Suporte remoto, ou seja, o MAP TI realiza a manutenção através do computador, sem a necessidade de estar presente. Neste recurso é indispensável a internet e têm sido um sucesso aos clientes.<br>";
+        echo "  </p>";
+        echo "</div>";
+        
+        //Segunda Coluna
+        echo "<div class='col-sm-2'>";
+        echo "  <p>";
+        echo "      <img src='images/slider/suporte.jpg' alt='Suporte' title='Suporte' width='250' height='250'>";
+        echo "  </p>";
+        echo "</div>";
+        
+        //Terceira Coluna
+        echo "<div class='col-sm-12'>";
+        echo "  <p>";
+        echo "      <a class='btn btn-default' href='index.php?m=serv'>Voltar</a>";
+        echo "  </p>";
+        echo "</div>";
+        
+    }
+    
+    public function telaCursos(){
+        
+        echo "<meta http-equiv='refresh' content='5;url=index.php?m=cur'>";
+        
+        //Primeira Coluna
+        echo "<div class='col-sm-12' style='font-family: arial; font-size: 14px; font-weight: bold;'>";
+        echo "  <h2 id='corPretoAlpha' style='text-align: justify;'><i class='fa fa-wrench'></i> Cursos</h2>";
+        echo "  <p id='textoServicosMapti'>";
+        echo "      Foram realizados vários cursos durante a jornada. Citarei algumas mais recentes:<br><br>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/google-activate.png' title='Actívate con Google' alt='Actívate con Google' width='200' height='130'><br><br>";
+        echo "          - Analítica Web;<br><br>";
+        echo "          - Marketing Digital;<br><br>";
+        echo "          - E-Commerce;<br><br>";
+        echo "          - Desenvolvimento Web;<br><br>";
+        echo "          - Desenvolvimento de Apps Móviles.<br><br>";
+        echo "      </div>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/brasil-mais-ti.png' title='Brasil mais TI' alt='Brasil mais TI' width='200' height='70'><br><br>";
+        echo "          - Java;<br><br>";
+        echo "          - COBOL.<br><br>";
+        echo "      </div>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/cursos_abeline.png' title='Cursos Abeline' alt='Cursos Abeline' width='200' height='70'><br><br>";
+        echo "          - Java;<br><br>";
+        echo "          - Gestão de Projetos.<br><br>";
+        echo "      </div>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/fundacao-bradesco.jpg' title='Fundação Bradesco' alt='Fundação Bradesco' width='200' height='70'><br><br>";
+        echo "          - Modelagem de Dados;<br><br>";
+        echo "          - Processo de Desenvolvimento de Softwares;<br><br>";
+        echo "          - Gestão de Projetos.<br><br>";
+        echo "      </div>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/intel.jpg' title='Intel Next Generation Center' alt='Intel Next Generation Center' width='200' height='70'><br><br>";
+        echo "          - Gerenciamento de TI;<br><br>";
+        echo "          - Segurança da Informação;<br><br>";
+        echo "          - ERP.<br>";
+        echo "      </div>";
+        echo "      <div class='col-sm-3'>";
+        echo "      <img src='images/cursos/treinaweb3.png' title='Treina Web' alt='Treina Web' width='200' height='70'><br><br>";
+        echo "          - PHP em Web Services.<br><br>";
+        echo "      </div>";
+        echo "  </p>";
+        echo "</div>";
+        echo "<p style='heigth: 20px;'>&nbsp;</p>";
+        
+        //Terceira Coluna
+        echo "<div class='col-sm-12'>";
+        echo "  <p style='text-align: center;'>";
+        echo "      <a class='btn btn-default' href='index.php'>Voltar</a>";
+        echo "  </p>";
+        echo "</div>";
     }
     
     public function telaServicos(){
